@@ -1,0 +1,130 @@
+
+.icon {
+    display: inline;
+    width: 40px;
+    height: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: black;
+    height: 50px;
+    color: white;
+}
+
+nav li {
+    display: inline-flex;
+    font-size: large;    
+}
+
+.avenger {
+    background-image: url("img/black-widow.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; 
+    flex-direction: column  ;  
+    height: 100vh;
+}
+
+.avatar {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+    align-content: center;
+    font-size: x-large;
+    color: teal ;
+}
+
+img {
+    display: none;
+}
+
+span:hover + img{
+    display: block;
+    height: 400px;
+ }
+
+a:hover .avatar {
+    display: inline;
+    background: url("img/black\ widows.png") no-repeat;
+}
+
+.about h1 {
+    display: flex;
+    align-content: center;
+    flex-direction: row-reverse;
+    font-size: 3em;
+    color: tomato;
+}
+
+.about h3{
+    display: flex;
+    align-content: center;
+    flex-direction: row-reverse;
+    font-size: 1em;
+    color: crimson;
+    
+}
+
+.about p{
+    background-color: white;
+    opacity: 0.5;
+    display: flex;
+    width: 90vh;
+    padding: 15px 15px; 
+    font-size:20px;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1280px) { 
+    .about p {
+        width: 50%;
+        font-size: larger;
+    }
+
+    .avenger{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) { 
+   .about p{
+       margin: 10px 10px;
+       width: auto;
+       color: cornsilk;
+       font-weight: bold;
+        width: 90%;
+        background-color: brown;
+        opacity: 1;
+    }
+
+    .avenger{
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 600px) { 
+    
+    .avenger{
+        background-image: url("img/black-widow.jpg");   
+        background-size: 100%;
+
+    }
+
+    .about p {
+        margin-top:150px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        opacity: 1;
+        font-size: larger;
+        color: darkblue;
+    }
+    
+    .avatar img {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
