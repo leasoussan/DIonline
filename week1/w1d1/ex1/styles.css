@@ -1,0 +1,26 @@
+
+
+
+.img {
+    display: flex;
+    align-items: center;
+    width: 50vh;
+}
+
+p {
+    flex-wrap: wrap;
+}
+
+.title {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+}
+
+.column h3 {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}

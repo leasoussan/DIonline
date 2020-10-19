@@ -1,0 +1,78 @@
+.icon {
+    display: inline;
+    width: 40px;
+    height: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: black;
+    height: 50px;
+    color: white;
+}
+
+nav li {
+    display: inline-flex;
+    font-size: large;    
+}
+
+.avenger {
+    background-image: url("img/black-widow.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; 
+    flex-direction: column  ;  
+    height: 100vh;
+}
+
+.avatar {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+    align-content: center;
+    font-size: x-large;
+    color: teal ;
+}
+
+img {
+    display: none;
+}
+
+span:hover + img{
+    display: block;
+    height: 400px;
+ }
+
+a:hover .avatar {
+    display: inline;
+    background: url("img/black\ widows.png") no-repeat;
+}
+
+.about h1 {
+    display: flex;
+    align-content: center;
+    flex-direction: row-reverse;
+    font-size: 3em;
+    color: tomato;
+}
+
+.about h3{
+    display: flex;
+    align-content: center;
+    flex-direction: row-reverse;
+    font-size: 1em;
+    color: crimson;
+    
+}
+
+.about p{
+    background-color: white;
+    opacity: 0.5;
+    display: flex;
+    width: 50%;
+    padding: 15px 15px; 
+
+}

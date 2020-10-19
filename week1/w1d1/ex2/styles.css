@@ -1,0 +1,48 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(15, 15, 77);
+    color: white;
+}
+
+
+form {
+    background-image: url("city.jpg");
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+form h1 {
+    display: flex;
+    justify-content:  center;
+    color:rgb(15, 15, 77);
+}
+
+.text {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+}
+
+.container {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+    background-color: rgb(205, 199, 226); 
+}
+
+.saleinfo{
+    justify-content: center;
+    align-content: center   ;
+}
+
+#submit {
+    background-color:pink;
+}
