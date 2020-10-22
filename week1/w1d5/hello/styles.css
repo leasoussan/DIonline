@@ -1,0 +1,12 @@
+.card {
+    border: transparent
+    height: 200px;
+    width: 300px;
+    
+}
+
+.row{
+    margin:auto;
+    display: flex;
+    justify-content: center;
+}
