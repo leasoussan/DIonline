@@ -1,0 +1,230 @@
+/* Navbar */
+
+body{
+background-color: rgb(221, 221, 221);
+}
+
+hr{
+    width: 700px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.navbar{
+display: inline;
+flex-direction: row;
+justify-content: left;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+
+li{
+display: inline;
+padding: 20px;
+}
+
+
+/* Header */
+
+.header{
+display: flex;
+flex-direction: column;
+background-image: url("portfolio_setup/images/headerback.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+height: 80vh;
+text-align: center;
+justify-content: center;
+align-items: center;
+
+}
+
+.button{
+background-color: tan;
+font-size: large;
+border-color: solid black 2px:
+}
+
+h2{
+ font-size: 2rem;
+ color: rgb(30, 30, 77);
+ font-weight: bold;
+ justify-self: center;
+}
+
+/* PROFIL */
+
+
+.about {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-content: center;
+margin-bottom: 40px;
+} 
+
+
+.info{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.info img{
+width: 200px;
+height: 200px;
+object-fit: cover;
+border-radius: 50%;
+margin-right: 30px;
+}
+
+.info p{
+border-left: solid teal 3px;
+padding-left: 20px;
+width: 400px;
+}
+
+.portfolio{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-content: center;
+margin: auto;
+margin-top: 70px;
+margin-bottom: 70px;
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: auto auto auto auto;
+padding: 5px;
+margin-top: 50px;
+grid-gap: 20px;
+width: 80%;
+}
+.grid-item {
+padding: 10px;
+font-size: 30px;
+}
+
+.portfolio .grid-container img{
+width: 150px;
+height: 150px;
+object-fit: cover;
+
+}
+
+/* BLOG */
+
+.blogrp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 40px;
+}
+
+.blog{
+display: flex;
+justify-content: center;
+margin: auto;
+margin-top: 70px;
+margin-bottom: 100px;
+}
+
+.card{
+    justify-content: center;
+}
+
+.card img{
+width: 200px;
+height: 200px;
+object-fit: cover;
+}
+
+.teamgp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+
+.teamgp h2{
+display: flex;
+justify-content: center;
+}
+
+.team {
+display: flex;
+justify-content: center;
+margin: auto;
+margin-top: 70px;
+}
+
+.tpro {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+
+
+.tpro img{    
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 40px;
+}
+
+.tpro h3 {
+    background-color: chocolate;
+    position: absolute;
+    color: khaki;
+    min-width: 150px;
+    max-width: 150px;
+    font-size: 20px;
+
+}
+
+/* form */
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: left;
+    margin: auto;
+    height: 260px ;
+    width: 70%;
+}
+
+
+
+input{
+    width: 350px;
+    margin-left: 50px;
+}
+
+.social {
+    height: 150px;
+    width: 300px;
+    border-right: solid lightsalmon 3px;
+    margin-left: 100px;
+    padding-left: 10px;
+}
+
+
