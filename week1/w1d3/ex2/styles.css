@@ -1,0 +1,28 @@
+
+.header { grid-area: a; background-color: lawngreen; }
+.hero {grid-area: b; background-color: lightcoral;}
+.main_cont {grid-area: c; background-color: lightseagreen;}
+.sidebar {grid-area: d; background-color: magenta;}
+.ext_cont {grid-area: e; background-color: mediumblue;}
+.relat_img{grid-area: g; background-color: mediumorchid;}
+.relat_post{grid-area: h; background-color: midnightblue;}
+.footer{grid-area: i; background-color: mintcream;}
+
+
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns:  repeat(5, auto);
+    grid-template-rows: repeat(8, 120px);
+    grid-template-areas: 
+    "a a a a a"
+    "b b c c c"
+    "b b c c c" 
+    "d d c c c"
+    "d d e e e"
+    "g g g h h"
+    "g g g h h "
+    "i i i i i";
+    grid-gap: 10px;
+}
