@@ -1,29 +1,7 @@
 The 8 Planets in Our Solar System
 
-Mercury
-The smallest and fastest planet, Mercury is the closest planet to the Sun and whips around it every 88 Earth days.
+Cest la que jai enelevee un peu de text fodler 1
 
-Mercury facts →
-
-Venus
-Spinning in the opposite direction to most planets, Venus is the hottest planet, and one of the brightest objects in the sky.
-
-Venus facts →
-
-Earth
-The place we call home, Earth is the third rock from the sun and the only planet with known life on it – and lots of it too!
-
-Earth facts →
-
-Mars
-The red planet is dusty, cold world with a thin atmosphere and is home to four NASA robots.
-
-Mars facts →
-
-Jupiter
-Jupiter is a massive planet, twice the size of all other planets combined and has a centuries-old storm that is bigger than Earth.
-
-Jupiter facts →
 
 Saturn
 The most recognizable planet with a system of icy rings, Saturn is a very unique and interesting planet.
