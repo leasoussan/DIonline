@@ -11,20 +11,21 @@
 //   Your string is : 'This movie is not so bad!' the result is : 'This movie is good!'
 //   Your string is : 'This dinner is bad!' the result is : 'This dinner is bad!'
 
-let sentence = prompt('Tell me something with not and bad in it')
+let sentence = prompt("this is not that bad at all")
 let words = sentence.split(" ")
+console.log(words)
 
 let not = words.indexOf("not")
 let bad = words.indexOf("bad")
-// let change = not += bad 
-// console.log(change)
+let n = bad - not
 
-let better = words.replace("not bad", "good")
-// let better = words.splice(not, 2, "good")
 
-console.log(better)
-// if (change == true){
-//     console.log(better)
-// }
+if (not < bad){
+    words.splice(not, n+1, "good")
+    console.log(words.join(" "))    
+} 
+else 
+console.log(sentence)
 
-// console.log("not is located at "+ not + "position, and BAD is located at " +bad+ "position of this sentence")
+
+console.log("not is located at "+ not + "position, and BAD is located at " +bad+ "position of this sentence")
