@@ -9,7 +9,9 @@
 // "Hi! I'm [name], and I'm from [country]."
 // If the name is not in the object, console.log :"Hi! I'm a guest."
 // 
-let ask =prompt("What's you'r name")
+
+
+let name = prompt("what si your name?")
 
 let guestList = {
       Randy: "Germany",
@@ -17,21 +19,50 @@ let guestList = {
       Wendy: "Japan",
       Norman: "England",
       Sam: "Argentina"
-    }
+}
+    
+      if(name in guestList){
+        console.log("Hi! I'm " + name + "and I'm form "+ guestList[name]);
+      }
+        else{console.log("hello Im a guest")};
+
+// Other Ex to understand before commiting
 
 
-  =
-     (let [key, value] of Object.entries(guestList)) {
-      console.log(`Hi I am ${key} and am from  ${value}`);
-    }
+        // let guestList = {
+        //   Randy: "Germany",
+        //   Karla: "France",
+        //   Wendy: "Japan",
+        //   Norman: "England",
+        //   Sam: "Argentina"
+        // }
+        // let username = prompt("what is your name?")
+        // for (let name in guestList) {
+        //     if (username == name ){
+        //     console.log("Hi! I'm, " + names + " and I'm from " + guestList[username] + ".")
+        //     } else {
+        //         console.log("Hi! I'm a guest.")
+        //     }
+        // }
+        
+
+  // let [key, value] of Object.entries(guestList) {
+  //     console.log(`Hi I am ${key} and am from  ${value}`);
+  //   }
   
-    // let names = Object.entries(guestList[key])
-    // console.log(names)
+  //   let names = Object.entries(guestList)
+  //   console.log(names)
 
-    // to access the countries
-  //   country = (Object.values(guestList))
+  //   // to access the countries
+  // let country = (Object.values(guestList))
   // console.log(country)
 
+// COMMENT
+//   There are 2 ways to call a property in a object 
+//   object.property or object[variable or "name"]
+
+//   forex here to console.log(name) === names
+//   consol log counties >> console.log[guestList[name]]
 
   // for (g = 0; g< guest.lenght ; g++){
   // } console.log("hi Iam " + guest + " and I am from" + countr

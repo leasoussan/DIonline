@@ -98,7 +98,7 @@
 // let mary= people.indexOf("Mary")
 // console.log(mary)
 
-
+// indexOf("Mary").chartAt(0).toLowerCase--------TO TRY TO IMPLEMENT THIS !!!!
 
 // // Write the command that gives the indexOf where “Foo” is located (this should return -1).
 // let foo= people.indexOf("Foo")
@@ -148,11 +148,12 @@
 // 1. Console.log the sum of all the elements of the array.
 // 2. Console.log the largest number of the array.
 
-let age = [20,5,12,43,98,55];
-let total =" ";
+// let age = [20,5,12,43,98,55];
+// let total =" ";
 
-for (i = 0 ; i < age.length;i++){
-    total += age[i];
-    console.log(total)
-}
+// for (i = 0 ; i < age.length;i++){
+//     total += age[i];
+//     console.log(total)
+// }
 
+// QUESTION 6 CHECK ANSWER 
