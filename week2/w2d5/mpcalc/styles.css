@@ -1,0 +1,22 @@
+button {
+    width:70px;
+    height:70px;
+  }
+
+.one{
+    grid-area: b;
+}
+
+  
+
+
+.grid-template {
+    display: grid;
+    width: 60%;
+    background-color: brown;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(5,auto);
+    grid-template-areas: 
+    "a a a a"
+    "b c d e";
+}
