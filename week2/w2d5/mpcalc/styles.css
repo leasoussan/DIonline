@@ -1,22 +1,110 @@
 button {
-    width:70px;
-    height:70px;
+    width:100px;
+    height:100px;
+    margin: 2px;
+    padding: 4px;
+    background-color:lightsalmon;
   }
 
+button:hover{
+    background-color: yellow;
+}
+
+.calculator{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.display{
+    grid-area: a;
+    background-color: burlywood;
+    border: solid black 3px;
+    margin: 10px;
+}
 .one{
     grid-area: b;
 }
 
-  
+.two{
+    grid-area: c;
+}
 
+.thre{
+    grid-area: d;
+}
+
+.four{
+    grid-area: e;
+}
+
+.five{
+    grid-area: f;
+}
+
+.six{
+    grid-area: g;
+}
+
+.seven{
+    grid-area: h;
+}
+
+.height{
+    grid-area: i;
+}
+
+.nine{
+    grid-area: j;
+}
+
+.zero{
+    grid-area: k;
+}
+
+.plus{
+    grid-area: l;
+}
+
+.minus{
+    grid-area: m;
+}
+
+.multip{
+    grid-area: n;
+}
+
+.divid{
+    grid-area: o;
+}
+
+.equal{
+    grid-area: p;
+}
+
+.clear{
+    grid-area: q;
+}
+
+.remove{
+    grid-area: r;
+}
+
+.touch{
+    background-color: sienna;
+}
 
 .grid-template {
     display: grid;
     width: 60%;
     background-color: brown;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(5,auto);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    /* grid-gap: 5px; */
     grid-template-areas: 
-    "a a a a"
-    "b c d e";
+    "a a a q"
+    "b c d m"
+    "e f g n"
+    "h i j l"
+    "r k p o";
 }
