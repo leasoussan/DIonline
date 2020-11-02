@@ -11,25 +11,21 @@
 // <!DOCTYPE html>
 
 
+var array= document.querySelector("body")
 
-var listp =["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Planet Nine", "Pluto",];
+var listp =["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Planet Nine", "Pluto",]
 
+var div = document.createElement("div")
 for (i = 0; i < listp.length; i++){   
-    var array= document.querySelector("body")
-    var planet = document.createElement("div")
-    var plist = document.createTextNode("listp"[i])
+    var planet = document.createElement("div") //put each into a div
+    planet.innerHTML= listp[i]
+    div.appendChild(planet)
     planet.className ="planet"
-    planet[i].appendChild(plist[i])
-    array.appendChild(planet[i])
+    planet.style = ".planet"
+    planet.style.backgroundColor ="yellow"
 }
 
-console.log(planet[i])
+console.log(div)
 
 
-
-
-
-
-// planets.appendChild(text)
-// array.appendChild(planets)
-// console.log(planets)
+// /TODO Last question - cehck class results 
