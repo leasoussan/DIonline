@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEEK3 Day3 -XP Drop and Drag</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- <h3>EX1 MOVE</h3>
+    <p><button type="button" class="btn" onclick="myMove()">Click Me</button></p>
+        <div id="container">
+          <div id="animate"></div>
+        </div>
+
+ <!--  -->
+
+<h3>Ex2 Drag and drop</h3>
+<div id ="box"> 
+<div id="container" ondrop="drop(event)" ondragover="allowDrop(event)" 
+> 1</div>
+<!-- 
+ondragenter="allowEnter(event)"
+ondragleave="allowLeave(event)" -->
+
+<div id ="animate" draggable="true" ondragstart="drag(event)" >  2</div>
+<img src="img/apple.jpg" alt="" draggable="true" ondragstart="drag(event)" >
+
+
+</div>
+
+
+
+<script src="script.js"></script> 
+
+</body>
+</html>
+
+
+
+
+------------------EX WEB SITE _______________
+<h2>HTML DRAG AND DROP DEMO</h2>
+
+<div id="box">
+  
+<!-- In the HTML  -->
+<div id="square1" draggable="true" ondragstart="dragStart(event)">square1</div>
+<div id="square2" draggable="true" 
+     ondragstart="dragStart(event)">square2</div>
+
+<div id="square3"
+     ondrop="dragDrop(event)"
+     ondragover="allowDrop(event)"
+     ondragenter="allowEnter(event)"
+     ondragleave="allowLeave(event)">square3</div>
+  
+  
+<!-- Everything in JS -->
+  <div id="square1">square1</div>
+  <div id="square2">square2</div>
+  <div id="square3">square3</div>
+</div>
+
+<!--        ondrop="dragDrop(event)"  -->
+<!--        ondragover="allowDrop(event)" -->
+<!--        ondragenter="allowEnter(event)" -->
+<!--        ondragleave="allowLeave(event)" -->
