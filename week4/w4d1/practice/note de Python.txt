@@ -1,0 +1,56 @@
+note de Python 
+print(") instead consol log
+most manipulations and ruls are similar to javascript
+there is non ===  only == 
+
+the shell in general is to run code 
+to run the code 
+python +file name 
+python is Case sensitive
+
+basic value type
+Num 
+int =number
+float 3.4
+boolean 
+
+to get the type>>>type(name) -Enter
+it will print the type
+pint() ----is a function 
+
+results[0] ---is an index
+
+\n in a string== new lign 
+\t is to add 
+x = somethng is to seet the variabe 
+the reste is to check ex x != to something 
+
+ther eis no === (like Js) it would be only 2== 
+
+EVERY THING IN PYTHON IS AN OBJECT !!!!
+
+What are object ??
+ 
+
+ object.methode() object can have a methode
+ function()- 
+ methode is a finction the belong to something 
+
+Variable = have to have clear name ixcept i for loops 
+print("hello", name) will give the name inside
+num = 5 
+>> num = 5 
+num +1 
+== 6 
+num still = 5 
+but num = num +1  || num +=1 
+then num is 6 
+ to change a varibale value  you have to declare it againe
+
+to format (inster) somethinginto the printprint(f" htis is my {name} and I like {list})
+ this { }allows us to put more stuff to to into it 
+conditional are checking stuffs.
+
+
+
+
