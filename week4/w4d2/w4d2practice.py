@@ -224,3 +224,10 @@ print(chr(chart.index(item)+65), item)
 to be bale to get the number of the items
 print(f"you have {len(chart)} items"})
 when we use format this allows us to enter methods 
+
+
+list >>>to Comas
+str.split(',')
+
+if we have comas to list 
+",".join(list)

@@ -196,21 +196,21 @@
 # Write a program that ask every user their age, and then tell them which one can see the movie.
 # Tip: Try to add the allowed ones to a list.
 
-y=True
-n = False
-ticket_price = []
-nb_people = []
+# y=True
+# n = False
+# ticket_price = []
+# nb_people = []
 
-age = int(input("how old are you guy?"))
+# age = int(input("how old are you guy?"))
     
-for i in range(age):
-    nb_people.append(age)
-    add =input("add person? y/n")
-    if add != n:
-        continue       
-    else :
-        print(f"your ages are{nb_people}")
-    break
+# for i in range(age):
+#     nb_people.append(age)
+#     add =input("add person? y/n")
+#     if add != n:
+#         continue       
+#     else :
+#         print(f"your ages are{nb_people}")
+#     break
 
 # for i in tickets:
 # if pers < 3:
@@ -231,10 +231,39 @@ for i in range(age):
 
 
 
+# users = ["David","ori", "shira", "loli", "lola"]
 
 
+# for user in users:
+#     age = int(input(f"hi {user} how old are you"))
+#     if age > 16:
+#         continue 
+#     else:
+#         users.remove(user)
+#         continue
 
+# print(users)
 
+# correction 
+# this is a problem to remove someone as it might skip indexes 
+
+# users = ["David","ori", "shira", "loli", "lola"]
+# users_16 =[]
+
+# for user in users:
+#     age = int(input(f"hi {user} how old are you"))
+#     if age >= 16:
+#         users_16.append(user)
+# print(users_16)
+
+# or
+# for i in range(len(users)):
+#     age = int(input(f"hi {user} how old are you"))
+#     if age <16:
+#         users.remove(user)
+#         i -= 1
+        # the second sulution is better as creatin a second list is more database so we are better with removing the right  
+        # the problem of index is set when we do decementing the list 
 
 # Exercise 14: Family Members
 # Using a while loop keep asking a user for input, these inputs will be used to control a menu
@@ -246,3 +275,13 @@ for i in range(age):
 # View family members
 # Print a nice list of the family members names
 # Exit
+
+guest_list = []
+add_name = ("What name would you like to add")
+remove_name = ("What name shoud I remove")
+
+
+while True:
+    question = "What would you let to do? :\n add guest type add. :\n to remove a guest type remove :\n to print your guest list print guests"
+    print(question)
+    break
