@@ -9,37 +9,54 @@
 
 // get number 
  getnbr = prompt("How many beers are you at");
- let beers = getnbr;
+//  let beers = getnbr;
 
-// max number of bottle
+// // max number of bottle
 
-let end = false
+// let end = false
 
-let increment = 1
-    while (beers > 0){
-        increment++;
-    }
+// let increment = 1
+//     while (beers > 0){
+//         increment++;
+//     }
 
-let decrease = increment(1);
+// let decrease = increment(1);
 
-let numBeers = 99 - decrease;
+// let numBeers = 99 - decrease;
 
 
-function countDown (bottle){
-    while (beers > 0){
-        beers = beers - decrease;  
-        console.log(beers + "bottles of beer on the wall");
-        console.log("take" + increment + "down and passe them down");    
-        }
-        if (beers == 1){
-            console.log("take One and passe it down")
-        } else if (beers = 0){
-            console.log("there are no more beers...you are drunk");
+// function countDown (bottle){
+//     while (beers > 0){
+//         for (i = beers; i < 0 ; i--){
+//         beers = beers - decrease;  
+        
+//         if (beers > 0){
+//             console.log(beers + "bottles of beer on the wall");
+//             console.log("take" + increment + "down and passe them down");   
+//             end = false; 
+//         }
+//         else if (beers > 99){
+//             alert("there are only 99 bottle You can't go over this")
+//         }else (getnbr);
+//         }
+//     }
+//     if (beers <= 1){
+//         console.log("take One and passe it down--- there are no more beers...you are drunk")
+//         end= true;
+//     }
+//     }
+
+// console.log(countDown(getnbr))
+
+
+// let beers = parseInt(prompt("Choose a number of beers"));
+// -------------------------------------------------------
+
+for (let i = 1; beers > i; i++) {
+
+    console.log(beers + " bottles of beer on the wall\n" + beers + " bottles of beer\nTake " + i + " down, pass it arround\n" + (beers - i) + " bottles of beer on the wall");
+
+    beers -= i;
+
     
-        }
-    if (beers > 99){
-        alert("there are only 99 bottle You can't go over this")
-    }else (getnbr);
-    }
-
-console.log(countDown(getnbr))
+}
