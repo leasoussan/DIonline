@@ -220,6 +220,20 @@
 # else:
 #     ticket ==15
 
+guests_age = input("How old are you ")
+
+
+if age  in guests_age:
+    if pers < 3:
+        ticket == 0
+    elif 3 < pers <12 :
+        ticket == 10
+    else:
+        ticket ==15
+
+
+
+
 
 
 

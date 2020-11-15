@@ -13,6 +13,22 @@
 
 import string, random
 
+text = "cats are cool"
+
+cyper_text=[]
+ for letter in text:
+     cyper_text += chr(ord(letter)+3)
+
+
+
+# # question to be dealing with 
+# how do you deal with space 
+# what do you do when arriving to z
+
+
+# ti shift +3 we can do 
+chr(ord(letter) +3)
+
 
 alphabet_string = string.ascii_uppercase
 alphabet_list = list(alphabet_string)

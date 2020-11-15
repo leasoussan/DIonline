@@ -41,6 +41,19 @@
 # total = sum(list(family.values()))
 # print(f"your Total today is : {total}")
 
+# ------------------Teacher Correction--------------------
+# name_age = input("Please give me your name and age(seperated by coma")
+
+# for name, age in family.items()
+# if age <3:
+#     price = 0
+# if age >=3 and age <=12:
+#     prince = 10
+# if ages >12 :
+#     price =15 
+
+# print(f"{name} pays {price}")
+
 
 # Exercise 3: Zara
 # Here is some information about a brand.
@@ -125,17 +138,23 @@
 #  Exercise 4 : Disney Characters
 # Consider this list :
 
-users = [ "Mickey", "Minnie", "Donald","Ariel","Pluto"] 
+users = [ "Mickey", "Minnie", "Donald", "Ariel", "Pluto"] 
 
-disney_users_A ={}
-
-for user in users:
-
-    
+indices = list(range(len(users)))
 
 
+disney_users_A =dict(zip(users,indices))
+disney_users_B = dict(zip(indices,users))
+disney_users_C = dict(zip(sorted(users), indices))
 
+# print(disney_users_A)
+# print(disney_users_B)
+# print(disney_users_C)
 
+disney_users_D = {key: value for (key, value) in disney_users_A if "i" in key}
+disney_users_E = {key: value for (key,value) in disney_users_A.items() if key.startswith("M") or key.startswith("P")}
+print(disney_users_E)
+print(my_list)
  
 # #1/ print(disney_users_A) >> {"Mickey": 0, "Minnie": 1, "Donald": 2, "Ariel": 3, "Pluto": 4}
 
@@ -150,3 +169,4 @@ for user in users:
 # Recreate the #1 result, only if:
 # The characters’ names contain the letter “i”.
 # The characters’ names start with the letter “m” or “p”.
+

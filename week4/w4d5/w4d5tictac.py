@@ -115,3 +115,6 @@ print(player_input("X"))
 
 # # then we let him play function 
 
+X = row =1, col =1
+borad[row][col]="X"
+make sure that when the response is 1 2 3 we should soubstract one

@@ -5,11 +5,11 @@
 # For example, get_full_name(first_name="john", middle_name="hooker", last_name="lee") will return John Hooker Lee.
 # But get_full_name(first_name="bruce", last_name="lee") will return Bruce Lee.
 
-def get_full_name(first_name, last_name, *args):
-    name = f"{first_name} + {args} + {last_name}"
-    return name
+# def get_full_name(first_name, last_name, *args):
+#     name = f"{first_name} + {args} + {last_name}"
+#     return name
 
-print(get_full_name(first_name="lea", middle_name="nada", last_name="soussan")) 
+# print(get_full_name(first_name="lea", middle_name="nada", last_name="soussan")) 
 
 
 
@@ -25,16 +25,42 @@ print(get_full_name(first_name="lea", middle_name="nada", last_name="soussan"))
 # * a              *
 # * frame          *
 # ******************
-# 
-# def box_printer (*args):
-#     for word in args:
-         
-#         print(":\n word")
-        
-            
-# # 
-# # 
-# 
+#
+
+sentence = "this", "is", "the", "hollywood", "life"
+# sentence2 = sentence.split()
+
+def box_printer (*args):
+    longest_word = 0
+    for word in args:
+        if len(word) > longest_word:
+            longest_word = len(word)
+            return longest_word  
+            # now I have the longest work I wand to creat the *
+    stars = "*"
+    for letter in longest_word:
+            print(longest_word)
+            border = longest_word * stars
+            print(border)
+
+
+print(box_printer("this", "is", "the", "hollywood", "life"))
+
+
+# LOGIC PROCESS: 
+# we need a longest word spwe set up a variable value ot work on
+# the we check in a loop for the longes lenght andwe rename it in the variable
+# that it changes value
+
+
+
+
+
+
+
+
+
+
 # 
 # 
 # 
