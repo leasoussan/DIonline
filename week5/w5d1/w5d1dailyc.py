@@ -53,16 +53,20 @@ class Farm():
         sentence= f"{self.name} has" 
         animal_type = self.get_animal_types()
         for animal in animal_type:
-            if animal == animal_type[0]:
-                print(f"{animal} and,")
-            elif animal == animal_type[1::-1]:
-                print(f"and {animal},")
+            if animal == animal_type[0] and ==1 :
+                print(f"{sentence} and, {animal}")
+            elif animal == len(animal_type)-1:
+                print(f"{sentence}, {animal} ")
             else:
                 print(f"{animal}.")
         # print(f"{sentence} + {animal_type}")        
 # if one animan sentence+= f"{}'
 
-len(type)-1 last one -2 2 beofre last 
+# len(type)-1 last one -2 2 beofre last 
+
+# or
+    # def get_short_info(self):
+    # sentence = " ,".join(animals[:-1]) "and" + animals[-1]
 
 
 f1 = Farm("McDonald")

@@ -197,9 +197,27 @@ class Zoo():
             if self.animals.items[chr[0]] == self.self.animals.items[chr[0]]:
                 listed_alpha.number= animal
                 print(listed_alpha)
+    # firt sorting the animals
+    animals = sorted(animals) #we put in a variable that we get a new list 
+    # 
+    sorted_animals={}
+    key =1 
+    starting_letter = animal[0][0] #A
 
-
-
+    for animal in animals:
+        # checing first the starting letter
+        if animal[0] != starting_letter
+            key += 1
+        # ow if there is nothing at this key 
+        if key not in sorted_animals:
+            sorted_animals[key] = animal
+        # if it's in sorted animals and there is a key already 
+        else:
+            if not isinstance(sorted_animals[key], list)
+                sorted_animals[key].append(animal)
+            sorted_animals[key] = [sorted_animals[key]]
+            # here to say if there is already a key dont make a new key. but add the animal else just add it 
+           
 
 # { 
 #     1: "Ape",
