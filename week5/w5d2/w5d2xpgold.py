@@ -32,7 +32,7 @@ acct1 = BankAccount("loulou", 1000)
 
 
 
-# EX missing parts to be bale to work 
+
 
 
 # Create a class Owner.
@@ -51,3 +51,7 @@ acct1 = BankAccount("loulou", 1000)
 # The Bank class can have maximum 10 clients (so 10 bank accounts ie objects of the BankAccount class)
 # Create a method to check how much money the bank has depending on the actions of its clients.
 # Inform the Bank Manager of the amount, the number of bills and their values
+
+
+
+
