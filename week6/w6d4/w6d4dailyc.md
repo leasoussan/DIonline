@@ -131,3 +131,8 @@ VALUES
 >>>Adjusting the customer order table 
 ALTER TABLE customer_order ADD COLUMN order_date DATE not NULL
 
+
+
+
+----------------
+

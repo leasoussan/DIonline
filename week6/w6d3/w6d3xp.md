@@ -111,8 +111,23 @@ FROM film f, inventory i, rental r, customer c
 WHERE f.film_id = i.film_id 
 AND i.inventory_id = r.inventory_id 
 AND c.first_name||' '||c.last_name LIKE  'Matthew%Mahan'
-AND f.title LIKE 'boat' OR f.description LIKE 'boat'
+AND lower(f.title) LIKE '%boat%' OR lower(f.description) LIKE '%boat%'
 AND f.replacement_cost in (SELECT f.replacement_cost FROM film f ORDER BY replacement_cost DESC limit 10);
 >>>didnt return me anython (not error)
 
+
+
+SELECT f.title
+FROM film f
+INNER JOIN inventory i ON f.film_id = i.film_id 
+INNER JOIN rental r ON i.inventry_id = r.inventry_id 
+INNER JOIN cusntomer c ON r.customer_id = c.customer_id
+WHERE LOWER(title) LIKE '%boat%' OR lower(f.description) LIKE '%boat%'
+AND c.first_name = 'Matthew' AND c.last_name ='Mahan' 
+ORDER BY f.replacement_cost DESC
+
+
+The difference doing it like this is that as there is no join in the first example its takke LOOONNGG Time becaut it has to go over every thing then check one by one 
+Better do do think in small sections 
+first join then check then JOIN then chec etc....
 
