@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+
+    {% for p in people|dictsort:"age" %}
+   
+    <h3 style="color: brown;"> ID: {{p.id}} Name : {{p.name}} Age: {{p.age}} Country: {{p.country}}</h3>
+
+    {% endfor %}
+
+    {% content block %}
+
+    {% url 'people.html' person.id %}
+    
+    {% endblock %}
+
+    
+
+
+   
+
+
+
+
+
+{% endblock %}

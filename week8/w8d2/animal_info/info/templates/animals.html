@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+
+{%  block content %}
+
+{% for animal in animals %}
+
+<a href="animal/{{animal.id}}"><h2>{{animal.name}}</h2></a>
+{{animal.photo}}
+
+{% endfor %} 
+
+
+
+{%  endblock %}

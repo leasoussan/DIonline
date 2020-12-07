@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<h2>{{family.name}}</h2>
+<h3>Animals in the Family: {{animal_fam_count}}</h3>
+
+
+{% for animal in animals|dictsort:"name" %}
+
+<h3>{{animal.name}}</h3>
+{% endfor %}
+
+
+
+{%  endblock %}
