@@ -6,7 +6,8 @@
 
 {% for animal in animals %}
 
-<a href="animal/{{animal.id}}"><h2>{{animal.name}}</h2></a>
+<a href="animal/{{animal.id}}"><h2>{{animal.name}} </h2></a> 
+<h2> {{animal.family.name}} </h2>
 {{animal.photo}}
 
 {% endfor %} 

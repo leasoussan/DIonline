@@ -25,8 +25,9 @@ def family(request, id):
 
 
 def animals(request):
-    animals = Animal.objects.all()
-    context = dict(animals=animals)
+    animals = Animal.objects.all().order_by('family__name')
+    family = Family.objects.all()
+    context = dict(animals=animals, family=family)
     
     return render(request, 'animals.html', context)
 
