@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+{% if item_todo %}
+
+{% for item in item_todo %}
+
+<h2>{{ item.title }}</h2>
+
+{% endfor %}
+{% endif %}
+
+
+
+<form action="" , method="POST">
+    {% csrf_token %}
+    
+    {{form.as_p }}
+
+  
+    <button>ADD TODO</button>
+
+</form>
+
+
+
+{% endblock %}

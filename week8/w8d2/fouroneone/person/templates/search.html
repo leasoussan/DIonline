@@ -1,0 +1,17 @@
+{% block content  %}
+
+
+
+<form action="{% url 'search_results' %}" method="GET">
+    <input name="first_name" type="text" placeholder="First name">
+    <input name="last_name" type="text" placeholder="Last Name">
+    <input name="phone_number" type="integer" placeholder="Phone Number">
+    <button>SEARCH</button>
+  </form>
+
+{% endblock %}
+
+
+
+
+
