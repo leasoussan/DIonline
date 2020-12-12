@@ -1,0 +1,52 @@
+{% extends 'rent/base.html' %}
+
+
+{% block content %}
+{% if customer %}
+<ul>
+    <h2>{{customer.first_name}}</h2>
+    <h2>{{customer.last_name}}
+        <h3>{{customer.email}}</h3>
+        <h3>{{customer.phone_number}}</h3>
+        <h3>{{customer.address}}</h3>
+
+        <h3>{{customer.city}}</h3>
+        <h3>{{customer.country}}</h3>
+</ul>
+
+{% endif %}
+
+{% if rental_hist %}
+<h3 style="color: brown;">Rental History </h3>
+<table>
+    <tr>
+        <th>Rental ID</th>
+        <th>Rental Date </th>
+        <th>Return Date</th>
+        <th>Vehicle Type </th>
+    </tr>
+    {% for rental in rental_hist %}
+    <tr>
+        <td>{{rental.id}}</td>
+        <td>{{rental.rental_date}}</td>
+        <td>{% if rental.return_date == Null %}
+            Not returned yet
+            {% else %}
+            {{rental.return_date}}
+            {% endif %}
+        </td>
+        <td>{{rental.vehicle}}</td>
+    </tr>
+    {% endfor %}
+    {% else %}
+    <h3>No rental History Yet </h3>
+    {% endif %}
+
+
+
+
+
+    <a href="{% url 'all_customers' %}" class="btn btn-primary">Back to customers</a>
+
+
+    {% endblock %}

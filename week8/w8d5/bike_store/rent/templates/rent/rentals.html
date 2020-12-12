@@ -1,0 +1,39 @@
+{% extends 'rent/base.html' %}
+{% include header %}
+
+
+{% block content %}
+
+
+<table>
+    <tr>
+        <th>Rental ID</th>
+        <th>Rental Date </th>
+        <th>Return Date</th>
+        <th>Customer </th>
+        <th>Vehicle Type </th>
+    </tr>
+    {% if rentals %}
+
+    {% for rental in rentals %}
+    <tr>
+        <td>{{rental.id}}</td>
+        <td>{{rental.rental_date}}</td>
+        <td>{% if rental.return_date == Null %}
+            Not returned yet
+            {% else %}
+            {{rental.return_date}}
+            {% endif %}
+           </td>
+        <td><a href= "{%  url 'rental_detail' id=rental.id %}">{{rental.customer}}</a></td>
+        <td>{{rental.vehicle}}</td>
+    </tr>
+    {% endfor %}
+    {% endif %}
+   
+</table>
+<a href="{% url 'rental_add' %}" class="btn btn-primary">ADD Rental</a>
+
+<a href="{% url 'home_page' %}" class="btn btn-primary">HOME</a>
+
+{% endblock %}

@@ -2,12 +2,26 @@
 
 
 
-<form action="{% url 'search_results' %}" method="GET">
-    <input name="first_name" type="text" placeholder="First name">
-    <input name="last_name" type="text" placeholder="Last Name">
-    <input name="phone_number" type="integer" placeholder="Phone Number">
+<form action="" method="POST">
+    {% csrf_token %}
+    {{SearchPersonForm}}
     <button>SEARCH</button>
   </form>
+
+
+  {% if results %}
+  
+  {% for item in results %}
+  <h2>{{results.first_name}}, {{results.last_name}}, {{results.phone_number}}</h2>
+
+  {% endfor %}
+  {% endif %}
+  
+ 
+
+
+
+  
 
 {% endblock %}
 

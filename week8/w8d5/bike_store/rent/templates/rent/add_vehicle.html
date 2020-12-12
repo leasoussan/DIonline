@@ -1,0 +1,25 @@
+{% extends 'rent/base.html' %}
+
+
+{% block content %}
+
+<form action="" method="GET">
+    <div>
+        {% csrf_token %}
+        <table>
+            
+            {{form.as_table}}
+
+        </table>
+        <button type="submit">SAVE</button>
+    </div>
+
+
+</form>
+
+
+
+<a href="{% url 'home_page' %}" class="btn btn-primary">Back to Home Page</a>
+
+
+{% endblock %}

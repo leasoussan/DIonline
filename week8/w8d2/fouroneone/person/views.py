@@ -29,35 +29,39 @@ def nameinfo(request, name):
 
 
 def searchform(request):
-
-    form = SearchPersonForm(request.POST or None)
     if request.method == "GET":
+        form = SearchPersonForm(request.POST)
 
-        query_set = Person.objects.filter(
-                Q(first_name__icontains=form["first_name"]) & Q(last_name__icontains=form["first_name"]) | Q(phone_number__icontains=form['phone_number'])
-            )
+        return render(request, 'search.html')
+
+    if request.method == "POST":
+        search_query = request.POST({'first_name':first_name,'last_name': last_name,'phone_number': phone_number})
+        print(f"search query print: {search_query}")
+        results = Person.objects.filter(first_name__icontains=request.POST["first_name"]) | Person.objects.filter(last_name__icontains=request.POST["first_name"]) | Person.objects.filter(phone_number__icontains=request.POST['phone_number'])
+        print(results)
         
         context = {
             "form":form,
-            "query_set" : query_set
+            "results" : results,
         }
+        
         return render(request, 'search.html', context)
 
 
-    return redirect('searchform')    
 
+# def searchform(request):
+#     if request.method == "GET":
+#         form = SearchPersonForm(request.POST)
 
+#         return render(request, 'search.html')
 
-def searchresults(request):
-    
-
-
-# Create two views: Daily challenge w8d4
-# 1. One that uses a form to submit either a phone number or a name.
-# Hint: For the form, use the PhoneNumberField that was provided for you by the django package: django-phonenumber-field.
-# 2. The other one displays the results, if there are any available
-
-
-# 84d2
-# Create a view ‘/persons/phonenumber’ that will display all the info of person depending on his phone number
-# Create a view ‘/persons/name’ that will display all the info of a person depending on his name.
+#     if request.method == "POST":
+#         search_query = request.POST['first_name', 'last_name', 'phone_number']
+#         results = Person.objects.filter(search_query__icontains=search_query[search_query])
+        
+#         context = {
+#             "form":form,
+#             "query_set" : query_set,
+#         }
+        
+#         return render(request, 'search.html', context)

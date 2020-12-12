@@ -1,0 +1,22 @@
+{% extends 'rent/base.html' %}
+{% include header %}
+
+
+{% block content %}
+<li>{{rental.id}}</li>
+<li>Rented From :{{rental.rental_date}}</li>
+<li>Returned date:
+    {% if rental.return_date == Null %}
+    Not returned yet
+    
+    {% else %}
+    {{rental.return_date}}
+    {% endif %}
+</li>
+<li>{{rental.customer}}</li>
+
+
+<a href="{% url 'all_rentals' %}" class="btn btn-primary">Back to Rentals</a>
+
+
+{% endblock %}

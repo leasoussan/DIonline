@@ -1,0 +1,28 @@
+{% extends 'rent/base.html' %}
+
+
+{% block content %}
+{% if vehicle %}
+<ul>
+<h2>{{vehicle.first_name}}</h2>
+<h2>{{vehicle.last_name}}
+<h3>{{vehicle.email}}</h3>
+<h3>{{vehicle.phone_number}}</h3>
+<h3>{{vehicle.address}}</h3>
+
+<h3>{{vehicle.city}}</h3>
+<h3>{{vehicle.country}}</h3>
+</ul>
+
+{% endif %}
+
+<h3 style="color: brown;">Vehicle Rental History to add function here </h3>
+
+
+
+
+
+<a href="{% url 'home_page' %}" class="btn btn-primary">Back to Home Page</a>
+
+
+{% endblock %}

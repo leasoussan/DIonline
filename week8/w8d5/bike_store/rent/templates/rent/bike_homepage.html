@@ -1,0 +1,26 @@
+{% extends 'rent/base.html' %}
+
+{% load static %}
+
+
+{% block content %}
+
+
+
+
+
+
+
+<a href="{% url 'all_rentals' %}" class="btn btn-primary">Rentals</a>
+<a href="{% url 'rental_add' %}" class="btn btn-primary">ADD Rental</a>
+
+<a href="{% url 'all_customers' %}" class="btn btn-primary">Customers</a>
+
+<a href="{% url 'customers_add' %}" class="btn btn-primary">Add Customers</a>
+
+
+<a href="{% url 'vehicles' %}" class="btn btn-primary">Vehicles</a>
+<a href="{% url 'vehicle_add' %}" class="btn btn-primary">ADD Vehicle</a>
+
+
+{% endblock %}
