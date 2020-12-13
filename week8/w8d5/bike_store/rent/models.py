@@ -48,6 +48,8 @@ class Rental(models.Model):
     customer = models.ForeignKey(Customer, on_delete = models.CASCADE)
     vehicle = models.ForeignKey(VehicleType, on_delete = models.CASCADE)
 
+
+
     def __str__(self):
         return f"{self.vehicle}"
 

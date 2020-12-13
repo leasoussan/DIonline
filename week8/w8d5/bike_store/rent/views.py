@@ -47,7 +47,7 @@ def rental_add(request):
 def customer_id(request, id):
     try:
         customer = Customer.objects.get(id=id)
-        rental_hist = Rental.objects.filter(id=customer.id)
+        rental_hist = Rental.objects.filter(customer=customer.id)
         context = {
             "customer": customer,
             "rental_hist": rental_hist,
@@ -59,6 +59,7 @@ def customer_id(request, id):
 
 def all_customers(request):
     customers = Customer.objects.all()
+    
     return render(request, 'rent/customers.html', {'customers': customers})
 
 
