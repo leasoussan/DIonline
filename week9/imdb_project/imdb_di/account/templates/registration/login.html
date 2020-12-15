@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Welcome</h1>
+<h2>Login</h2>
+
+
+<form action="{% url 'signup' %}">
+{% csrf_token %}
+
+<label for="username">Username</label>
+<input type="text" name="username">
+<br>
+<label for="password">Password</label>
+<input type="text" name="username">
+<br>
+<button class='btn btn-danger'>Login</button>
+</form>
+
+<p> You wish to create your IMDB ?? <br>
+<a class='btn btn-info' href="{% url 'signup' %}">Register Here </a> 
+</p>
+{% endblock %}
